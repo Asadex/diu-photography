@@ -1,0 +1,50 @@
+.full-height{
+    height: 103vh;
+    position: relative;
+}
+
+#urban{
+    background-image: url(../images/urban-xl.jpg);
+    @include header-background;
+}
+
+#nature {
+    background-image: url(../images/nature-xl.jpg);
+    @include header-background;
+    background-position-x: 45%;
+}
+
+#friends {
+    background-image: url(../images/friends-xl.jpg);
+    @include header-background;
+    background-position-x: 80%;
+}
+
+#social {
+    background-image: url(../images/social-xl.jpg);
+    @include header-background;
+    background-position-x: 38%;
+}
+
+.header-backgrounds-title{
+    text-align: center;
+    position: relative;
+    top: 45%;
+    font-size: 6rem;
+    font-weight: 900;
+    color: rgba(255,255,255,0.4);
+    @media screen and (min-width: 600px){
+        top: 42%;
+        font-size: 7.5rem;
+    }
+    @media screen and (min-width: 800px) {
+        top: 40%;
+        font-size: 8.5rem;
+    }
+    @media screen and (min-width: 1000px) {
+        font-size: 10rem;
+    }
+}
+
+
+
