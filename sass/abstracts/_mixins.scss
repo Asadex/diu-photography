@@ -8,13 +8,13 @@
 
 @mixin responsive-background($name){
     background-image: url(../images/#{$name}-s.jpg);
-    @media screen and (min-width: 600px){
+    @media screen and (min-width: 351px){
         background-image: url(../images/#{$name}-m.jpg);
     }
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 700px) {
         background-image: url(../images/#{$name}-l.jpg);
     }
-    @media screen and (min-width: 2000px) {
+    @media screen and (min-width: 1200px) {
         background-image: url(../images/#{$name}-xl.jpg);
     }
 }
