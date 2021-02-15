@@ -5,25 +5,26 @@ const NATURE = document.getElementById('nature');
 const CLOSE = document.getElementById('close');
 let menuStatus = false;
 
-HAMBURGER.addEventListener('click',function(){
-    URBAN.style.left = '55vw';
-    document.getElementById('body').style.overflow = 'hidden';
-    document.getElementById('body').style.position = 'fixed';
-    menuStatus = true;
-})
 
-CLOSE.addEventListener('click',function(){
+function openMenu(){
+    URBAN.style.left = '55vw';
+        document.getElementById('body').style.overflow = 'hidden';
+        document.getElementById('body').style.position = 'fixed';
+        menuStatus = true;
+}
+function closeMenu(){
     URBAN.style.left = '0';
     document.getElementById('body').style.overflowY = 'scroll';
     document.getElementById('body').style.position = 'initial';
     menuStatus = false;
-})
+}
 
+
+CLOSE.addEventListener('click',closeMenu)
+HAMBURGER.addEventListener('click',openMenu);
 window.addEventListener('click', function(e){
     if(e.target === URBAN){
-        URBAN.style.left = '0';
-        document.getElementById('body').style.overflowY = 'scroll';
-        document.getElementById('body').style.position = 'initial';
-        menuStatus = false;
+        closeMenu();
     }
-})
+});
+window.addEventListener('resize',closeMenu)
