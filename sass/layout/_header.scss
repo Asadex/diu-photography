@@ -35,6 +35,9 @@
     font-size: 6rem;
     font-weight: 900;
     color: rgba(255,255,255,0.4);
+    &:first-of-type{
+        top: 30%;
+    }
     @media screen and (min-width: 600px){
         top: 38%;
         font-size: 7.5rem;
