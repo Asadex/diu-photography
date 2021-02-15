@@ -5,24 +5,24 @@
 }
 
 #urban{
-    background-image: url(../images/urban-xl.jpg);
+    @include responsive-background(urban);
     @include header-background;
 }
 
 #nature {
-    background-image: url(../images/nature-xl.jpg);
+    @include responsive-background(nature);
     @include header-background;
     background-position-x: 50%;
 }
 
 #friends {
-    background-image: url(../images/friends-xl.jpg);
+    @include responsive-background(friends);
     @include header-background;
     background-position-x: 80%;
 }
 
 #social {
-    background-image: url(../images/social-xl.jpg);
+    @include responsive-background(social);
     @include header-background;
     background-position-x: 38%;
 }
