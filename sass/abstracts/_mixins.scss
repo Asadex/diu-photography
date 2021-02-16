@@ -1,5 +1,5 @@
 @mixin header-background {
-    box-shadow: inset 0 0 0 101vh rgba(0, 0, 0, .45);
+    box-shadow: inset 0 0 0 101vh rgba(0, 0, 0, .55);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: right;
@@ -16,5 +16,19 @@
     }
     @media screen and (min-width: 3000px) {
         background-image: url(../images/#{$name}-xl.jpg);
+    }
+}
+
+@mixin general-button($background-color,$color,$trans-background,$trans-color){
+    border: 1.8px solid $background-color;
+    background-color: $background-color;
+    padding: 1rem 2rem;
+    box-shadow: inset 0 0 0 0 $trans-background;
+    transition: 0.2s linear;
+    color: $color;
+    font-weight: 500;
+    &:hover{
+        box-shadow: inset  200px 0 0 0 $white-font;
+        color: $trans-color
     }
 }

@@ -28,28 +28,6 @@
     background-position-x: 38%;
 }
 
-.header-backgrounds-title{
-    text-align: center;
-    position: relative;
-    top: 42%;
-    font-size: 6rem;
-    font-weight: 900;
-    color: rgba(255,255,255,0.4);
-    &#urban-title{
-        top: 30%;    
-    }
-    @media screen and (min-width: 600px){
-        top: 42%;
-        font-size: 7.5rem;
-    }
-    @media screen and (min-width: 800px) {
-        top: 42%;
-        font-size: 8.5rem;
-    }
-    @media screen and (min-width: 1000px) {
-        font-size: 10rem;
-    }
-}
 
 nav{
     position: relative;
@@ -103,7 +81,7 @@ nav{
             cursor: pointer;
             margin-right: 1.5rem;
             font-size: .95rem;
-
+            text-transform: uppercase;
             &:last-of-type {
                 margin-right: 0;
             }
@@ -153,6 +131,13 @@ nav{
                         color: $primary-color
                     }
                 }
+            }
+        }
+        @media screen and (max-height: 450px) {
+            li {
+                font-size: 1.5rem;
+                margin: .3rem 0;
+                padding: 0 .1rem .2rem .1rem;
             }
         }
     }

@@ -4,3 +4,65 @@
 html{
     font-family: "Poppins", sans-serif;
 }
+.header-backgrounds-title {
+    text-align: center;
+    position: relative;
+    top: 42%;
+    font-size: 6rem;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.4);
+
+    &#urban-title {
+        top: 30%;
+    }
+
+    @media screen and (min-width: 600px) {
+        top: 42%;
+        font-size: 7.5rem;
+    }
+
+    @media screen and (min-width: 800px) {
+        top: 42%;
+        font-size: 8.5rem;
+    }
+
+    @media screen and (min-width: 1000px) {
+        font-size: 10rem;
+    }
+    @media screen and (max-width: 281px) {
+        font-size: 4.5rem;
+    }
+}
+
+.section-title{
+    font-size: 1.3rem;
+    font-weight:600;
+    color: $primary-color;
+}
+
+.cool-description{
+    font-weight: 800;
+    font-size: 4rem;
+    line-height: 1.25;
+    margin: 3.9rem 0;
+    @media screen and (max-width: 1100px) {
+        font-size: 3.5rem;
+        line-height: 1.15;
+        margin: 3.5rem 0;;
+    }
+    @media screen and (max-width: 1000px) {
+        font-size: 3rem;
+        line-height: 1.15;
+        margin: 3rem 0;;
+    }
+    @media screen and (max-width: 830px) {
+        font-size: 2.6rem;
+        line-height: 1.12;
+        margin: 2.6rem 0;
+    }
+    @media screen and (max-width: 280px) {
+        font-size: 1.6rem;
+        line-height: 1.12;
+        margin: 1.6rem 0;
+    }
+}

@@ -7,15 +7,11 @@ let menuStatus = false;
 
 
 function openMenu(){
-    URBAN.style.left = '55vw';
-        document.getElementById('body').style.overflow = 'hidden';
-        document.getElementById('body').style.position = 'fixed';
-        menuStatus = true;
+    MENU.style.left = '0';
+    menuStatus = true;
 }
 function closeMenu(){
-    URBAN.style.left = '0';
-    document.getElementById('body').style.overflowY = 'scroll';
-    document.getElementById('body').style.position = 'initial';
+    MENU.style.left = '-55vw';
     menuStatus = false;
 }
 
@@ -27,4 +23,5 @@ window.addEventListener('click', function(e){
         closeMenu();
     }
 });
-window.addEventListener('resize',closeMenu)
+window.addEventListener('resize',closeMenu);
+window.addEventListener('scroll',closeMenu)
