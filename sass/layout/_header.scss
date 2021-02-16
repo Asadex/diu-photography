@@ -33,7 +33,7 @@ nav{
     position: relative;
     display: flex;
     justify-content: space-between;
-    span{
+    h1{
         font-weight: 900;
         color: $white-font;
         font-size: 1.5rem;
@@ -46,8 +46,8 @@ nav{
         background-color: $white-font;
         z-index: 2;
         position: absolute;
-        top:8px;
-        right: 0;
+        top:40px;
+        right: 30px;
         &::before{
             content: '';
             width: 22px;
