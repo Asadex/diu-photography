@@ -94,7 +94,7 @@ nav{
                     text-decoration: none;
                 }
             }
-            #close{
+            &#close{
                 display: none ;
             }
         }
@@ -119,6 +119,7 @@ nav{
                     color: lighten($black-font,20%)
                 }
                 &#close{
+                    display: initial;
                     font-size: 3rem;
                     position: absolute;
                     top: 15px;
