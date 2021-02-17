@@ -8,7 +8,7 @@
     flex-flow: column wrap;
     align-items: center;
     padding: 5rem;
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 900px) {
         padding: 5rem 1rem;
     }
 }
@@ -34,10 +34,92 @@
         font-size: 4.3rem;
     }
     @media screen and(max-width:500px) {
-        font-size: 3.5rem;
+        font-size: 3.8rem;
     }
-    @media screen and(max-width:370px) {
+    @media screen and(max-width:360px) {
         font-size: 2.2rem;
     }
+}
+
+.slider{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin-top: 4rem;
+}
+
+#testimonials-slider{
+    background-color: darkcyan;
+}
+
+#testimonials-slider .wrapper{
+    height: 100%;
+    background-color: red;
+}
+.slides{
+    height: 100%;
+    display: flex;
+    position: relative;
+    left: 0%;
+    background-color: plum;
+}
+
+
+.slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    border-right: 2px solid black;
+
+}
+
+.slide-coment{
+    width: 50%;
+    height: 70%;
+    background-color: white;
+}
+
+
+//CONTROL BUTTONS
+.control {
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    background: $primary-color;
+    border-radius: 50px;
+    margin-top: -20px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    @media screen and (max-width: 900px) {
+        display: none;
+    }
+}
+
+.prev,
+.next {
+    background-size: 22px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.prev {
+    background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronLeft-512.png);
+    left: -30px;
+}
+
+.next {
+    background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronRight-512.png);
+    right: -30px;
+}
+
+.prev:active,
+.next:active {
+    transform: scale(.8);
 }
 
