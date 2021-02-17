@@ -1,0 +1,89 @@
+#portfolio-grid{
+    padding: 5rem;
+    display: grid;
+    grid-template: repeat(4,400px) / repeat(4,1fr);
+    grid-gap: 2rem;
+    grid-template-areas:
+    "a a b b"
+    "a a c d"
+    "e e f f"
+    "g h f f";
+    @media screen and (max-width: 1000px) {
+        grid-template: repeat(8, 1fr) / repeat(2, 1fr);
+        grid-template-areas: 
+        "a a"
+        "a a" 
+        "b b"
+        "c d"
+        "e e"
+        "f f"
+        "f f"
+        "g h";
+    }
+    @media screen and (max-width: 800px) {
+        padding: 5rem 1rem;
+    }
+}
+
+.portfolio-image{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+    
+}
+
+.wrapper{
+    position: relative;
+    overflow: hidden;
+    & .overlay{
+        width: 100%;
+        height: 130px;
+        padding: 2rem;
+        background-color: rgb(24, 24, 24);
+        position: absolute;
+        bottom: 0;
+        opacity: 0;
+        color: $white-font;
+        transition: 0.3s linear;
+        & span{
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+        & p{
+            font-size: 1.6rem;
+            font-weight: 800;
+            margin: 1.2rem 0;
+        }
+    }
+
+    &:hover{
+        & .overlay{
+            opacity: 1;
+        }
+    }
+}
+
+.wrapper:nth-of-type(1){
+    grid-area: a;
+}
+.wrapper:nth-of-type(2) {
+    grid-area: b;
+}
+.wrapper:nth-of-type(3) {
+    grid-area: c;
+}
+.wrapper:nth-of-type(4) {
+    grid-area: d;
+}
+.wrapper:nth-of-type(5) {
+    grid-area: e;
+}
+.wrapper:nth-of-type(6) {
+    grid-area: f;
+}
+.wrapper:nth-of-type(7) {
+    grid-area: g;
+}
+.wrapper:nth-of-type(8) {
+    grid-area: h;
+}
