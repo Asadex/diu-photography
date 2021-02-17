@@ -8,7 +8,7 @@
     "a a c d"
     "e e f f"
     "g h f f";
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 1030px) {
         grid-template: repeat(8, 1fr) / repeat(2, 1fr);
         grid-template-areas: 
         "a a"
@@ -22,6 +22,11 @@
     }
     @media screen and (max-width: 800px) {
         padding: 5rem 1rem;
+        grid-gap: 1.7rem;
+    }
+    @media screen and (max-width: 300px) {
+        padding: 1rem;
+        grid-gap: .6rem;
     }
 }
 
@@ -45,14 +50,24 @@
         opacity: 0;
         color: $white-font;
         transition: 0.3s linear;
+        @media screen and (max-width: 600px) {
+            padding: 1.3rem;
+            height: 100px
+        }
         & span{
             font-size: 1.1rem;
             font-weight: 500;
+            @media screen and (max-width: 600px) {
+                font-size: .9rem;
+            }
         }
         & p{
             font-size: 1.6rem;
             font-weight: 800;
             margin: 1.2rem 0;
+            @media screen and (max-width: 600px) {
+                font-size: 1.2rem;
+            }
         }
     }
 
