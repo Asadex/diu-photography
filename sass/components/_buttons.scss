@@ -1,4 +1,4 @@
-button{
+.button{
     @include general-button($primary-color
     ,$white-font,$primary-color, $primary-color);
 }

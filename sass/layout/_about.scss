@@ -2,7 +2,6 @@
     display: grid;
     grid-template-columns: 50% 50%;
     padding: 5rem;
-    padding-bottom: 0;
     @media screen and (max-width: 840px){
         display: flex;
         justify-content: center;
