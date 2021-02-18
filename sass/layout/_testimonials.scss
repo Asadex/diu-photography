@@ -19,6 +19,7 @@
     font-weight: 900;
     text-align: center;
     color: rgb(44, 44, 44);
+    margin: 1rem;
     @media screen and(max-width:1200px){
         font-size: 8rem;
     }
@@ -37,7 +38,7 @@
     @media screen and(max-width:500px) {
         font-size: 3.5rem;
     }
-    @media screen and(max-width:400px) {
+    @media screen and(max-width:420px) {
         font-size: 3rem;
     }
     @media screen and(max-width:342px) {
@@ -49,16 +50,53 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 450px;
+    margin-top: 3rem;
+    padding-bottom: .2rem;
 }
 
-.testimonials-slider-slide{
+.testimonial{
     width: 600px;
-    height: 350px;
     position: relative;
-    background-color: $white-font   ;
-    box-shadow:rgba(24, 24, 24,0.2) 0 0 10px 10px ;
+    padding: 3rem;
+    color: $white-font;
+    background-color: rgb(39, 39, 39);
+    color: white;
+    &__profile{
+        display: flex;
+        margin: 1.5rem 0;
+
+        &__image{
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        &__name{
+            margin-left: 1.2rem;
+            position: relative;
+            top: 20px;
+            &__real{
+                font-size: 1.6rem;
+                font-weight: 800;
+                color: $primary-color;
+
+            }
+            &__nick{
+                font-size: 1.1rem;
+                font-weight: 400;
+                margin-top: .6rem;
+            }
+        }
+    }
+    &__description{
+        font-size: 1.4rem;
+        line-height: 1.3;
+        font-weight: 300;
+        text-align: justify;
+    }
 }
+
+
 //CONTROL BUTTONS
 .control {
     position: absolute;
@@ -84,12 +122,12 @@
 
 .prev {
     background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronLeft-512.png);
-    left: -30px;
+    left: -60px;
 }
 
 .next {
     background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronRight-512.png);
-    right: -30px;
+    right: -60px;
 }
 
 .prev:active,
