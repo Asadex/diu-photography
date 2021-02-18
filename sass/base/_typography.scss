@@ -39,6 +39,9 @@ html{
     font-weight:600;
     color: $primary-color;
     text-transform: uppercase;
+    @media screen and (max-width: 350px) {
+        font-size: 1.1rem;
+    }
 }
 
 .cool-description{
