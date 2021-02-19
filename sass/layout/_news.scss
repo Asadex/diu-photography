@@ -5,7 +5,7 @@
     padding: 5rem 0;
     padding-top: 0;
     @media screen and (max-width: 850px) {
-        grid-template: 100px 1fr/ 50% 50%;
+        grid-template: 100px 1fr/ 49% 48%;
         padding: 1rem;
         grid-template-areas:
         "a a"
@@ -31,6 +31,6 @@
 }
 #news__title{
     font-size: 2.5rem;
-    font-weight: 800;
+    font-weight: 700;
     margin-top: 2.3rem;
 }

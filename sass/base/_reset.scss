@@ -152,7 +152,9 @@ img {
     max-width: 100%;
 }
 
-button:focus,
-button:active {
-    outline: none;
+input {
+    display: block;
+}
+label{
+    display: block
 }

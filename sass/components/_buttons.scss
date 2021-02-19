@@ -2,3 +2,6 @@
     @include general-button($primary-color
     ,$white-font,$primary-color, $primary-color);
 }
+.send__button{
+    @include general-button($black-font, $white-font, $white-font, $black-font);
+}
