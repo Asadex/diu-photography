@@ -7,11 +7,17 @@
     "base/typography";
 
 @import
-    "components/buttons";
+    "components/buttons",
+    "components/member",
+    "components/controls",
+    "components/testimonial",
+    "components/serviceCard",
+    "components/navbar";
 
 @import
     "layout/header",
     "layout/about",
     "layout/services",
     "layout/portfolio",
-    "layout/testimonials";
+    "layout/testimonials",
+    "layout/team";

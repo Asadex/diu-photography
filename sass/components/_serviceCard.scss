@@ -1,0 +1,49 @@
+.service-card {
+    position: relative;
+    padding: 40px 35px 50px 35px;
+    border: 2px solid #f6f6f6;
+    text-align: center;
+    transition: all 350ms ease;
+    text-align: center;
+
+    .las,
+    .lar,
+    .la {
+        font-size: 3.5rem;
+        color: $primary-color;
+        align-self: right;
+        transition: all 350ms ease;
+    }
+
+    .service-card-title {
+        font-weight: 800;
+        font-size: 1.5rem;
+        margin: 1.7rem 0;
+        transition: all 350ms ease;
+    }
+
+    .service-card-description {
+        font-size: .95rem;
+        line-height: 1.6;
+        font-weight: 300;
+        transition: all 350ms ease;
+    }
+
+    &:hover {
+        border: 2px solid lighten($black-font, 20%);
+        background-color: lighten($black-font, 10%);
+
+        .service-card-title {
+            color: white;
+        }
+
+        .service-card-description {
+            color: white;
+
+        }
+    }
+
+    @media screen and (min-width: 650px) {
+        text-align: left;
+    }
+}

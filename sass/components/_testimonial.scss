@@ -1,0 +1,61 @@
+.testimonial {
+    width: 600px;
+    position: relative;
+    padding: 3rem;
+    color: $white-font;
+    background-color: rgb(39, 39, 39);
+    color: white;
+
+    &__profile {
+        display: flex;
+        margin: 1.5rem 0;
+
+        &__image {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        &__name {
+            margin-left: 1.2rem;
+            position: relative;
+            top: 20px;
+
+            &__real {
+                font-size: 1.6rem;
+                font-weight: 800;
+                color: $primary-color;
+
+                @media screen and (max-width: 320px) {
+                    font-size: 1.2rem;
+                }
+            }
+
+            &__nick {
+                font-size: 1.1rem;
+                font-weight: 400;
+                margin-top: .6rem;
+
+                @media screen and (max-width: 320px) {
+                    font-size: .9rem;
+                }
+            }
+        }
+    }
+
+    &__description {
+        font-size: 1.2rem;
+        line-height: 1.4;
+        font-weight: 300;
+        text-align: justify;
+
+        @media screen and (max-width: 900px) {
+            font-size: 1rem;
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        padding: 1.7rem;
+    }
+}
