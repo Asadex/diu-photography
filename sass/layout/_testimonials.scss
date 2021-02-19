@@ -1,6 +1,6 @@
-#testimonials-wrapper{
-    background-color: rgb(24, 24, 24);
-}
+// #testimonials-wrapper{
+//     background-color: rgb(24, 24, 24);
+// }
 
 #testimonials{
     position: relative;
@@ -18,7 +18,7 @@
     font-size: 10rem;
     font-weight: 900;
     text-align: center;
-    color: rgb(44, 44, 44);
+    color: $lighter-grey;
     margin: 1rem;
     @media screen and(max-width:1200px){
         font-size: 8rem;

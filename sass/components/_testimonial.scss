@@ -2,9 +2,11 @@
     width: 600px;
     position: relative;
     padding: 3rem;
+    padding-top: 2.5rem;
     color: $white-font;
     background-color: rgb(39, 39, 39);
-    color: white;
+    background-color: $lighter-grey;
+    color: black;
 
     &__profile {
         display: flex;
@@ -23,8 +25,8 @@
             top: 20px;
 
             &__real {
-                font-size: 1.6rem;
-                font-weight: 800;
+                font-size: 1.3rem;
+                font-weight: 600;
                 color: $primary-color;
 
                 @media screen and (max-width: 320px) {
@@ -33,25 +35,25 @@
             }
 
             &__nick {
-                font-size: 1.1rem;
-                font-weight: 400;
+                font-size: 1rem;
+                font-weight: 300;
                 margin-top: .6rem;
 
                 @media screen and (max-width: 320px) {
-                    font-size: .9rem;
+                    font-size: .8rem;
                 }
             }
         }
     }
 
     &__description {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         line-height: 1.4;
         font-weight: 300;
         text-align: justify;
 
         @media screen and (max-width: 900px) {
-            font-size: 1rem;
+            font-size: .9rem;
         }
     }
 
